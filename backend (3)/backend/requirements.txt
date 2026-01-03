@@ -20,3 +20,4 @@ uvicorn
 groq
 google-auth
 requests
+email-validator
