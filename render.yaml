@@ -2,6 +2,7 @@ services:
 - type: web
   name: memory-decay-backend
   env: python
+  plan: free
   buildCommand: pip install -r "backend (3)/backend/requirements.txt"
   startCommand: cd "backend (3)/backend" && uvicorn app:app --host 0.0.0.0 --port $PORT
   rootDir: "."
